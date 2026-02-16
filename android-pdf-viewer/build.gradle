@@ -57,6 +57,11 @@ android {
         abortOnError false
     }
 
+    // Required for maven-publish to expose the release variant as a component
+    publishing {
+        singleVariant('release')
+    }
+
 }
 
 dependencies {
